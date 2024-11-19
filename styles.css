@@ -1,0 +1,381 @@
+/* applique à tout*/
+* {
+  margin: auto;
+  padding: auto;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: roboto;
+  background-color: #fff;
+  color: #66b098;
+  margin: auto;
+  padding: auto;
+  box-sizing: border-box;
+}
+/* Photo de Couverture */
+.cover-photo {
+  display: flex;
+  position: relative;
+  text-align: bottom;
+  color: white;
+  padding: 40px;
+  background-color: #333;
+}
+
+.cover-photo img {
+  display: block;
+  width: 30%; 
+  height: 30%;
+  border-radius: 20px;
+}
+
+/* Header */
+header {
+  background-color: #ce4380; 
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+header .logo img {
+  width: 150px;
+  height: auto;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 120px;
+  margin-left: auto;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: roboto;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Univers Pop&Art */
+#universe {
+  padding: 40px;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+#universe h2 {
+  font-size: 60px;
+  color: #ce4380;
+  margin-bottom: 20px;
+}
+
+#universe p {
+  font-size: 30px;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.themed-visuals {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.themed-visuals img {
+  width: 200px;
+  height: auto;
+  border: 5px solid #ce4380;
+  transition: transform 0.3s ease;
+  margin-bottom: 40px;
+}
+
+.themed-visuals img:hover {
+  transform: scale(1.05);
+}
+
+/* Licences */
+.licenses h3 {
+  margin-top: auto;
+  margin-bottom: 20px;
+  gap: 10px;
+  font-family: roboto;
+  color: #333;
+  font-size: 40px;
+  background-color: #66b098;
+}
+.licenses ul {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 50px;
+}
+
+.licenses li {
+  list-style: none;
+}
+
+.licenses img {
+  width: 80px;
+  height: 80px;
+  
+}
+
+/* Produits */
+#products {
+  padding: 40px;
+  background-color: #66b098;
+}
+
+#products h2 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 100px;
+  margin-top: 20px;
+}
+
+.product {
+  background-color: #f5c416;
+  padding: 20px;
+  border: 2px solid #ce4380;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #ce4380;
+  margin-bottom: 15px;
+  
+}
+
+.product h3 {
+  font-size: 1.5rem;
+  color: #ce4380;
+  margin-bottom: 10px;
+}
+
+.product p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.product button {
+  background-color: #ce4380;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.product button:hover {
+  background-color: #333;
+}
+
+/* Best-Sellers */
+#best-sellers {
+  padding: 40px;
+  background-color: #fff;
+  
+}
+
+#best-sellers h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ce4380;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.carousel-item {
+  text-align: center;
+}
+
+.carousel-item img {
+  width: 200px;
+  height: auto;
+  border: 5px solid #ce4380;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.carousel-item img:hover {
+  transform: scale(1.1);
+}
+
+.carousel-item p {
+  font-size: 1.1rem;
+  color: #ce4380;
+}
+
+/* Contact */
+#contact {
+  padding: 20px;
+  background-color: #66b098;
+}
+
+#contact h2 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ce4380;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-form label {
+  font-size: 20px;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #ce4380;
+  border-radius: 5px;
+  outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #ce4380;
+}
+
+.contact-form button {
+  background-color: #ce4380;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #ce4380;
+}
+
+/* Équipe */
+.team {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.team-member {
+  text-align: center;
+}
+
+.team-member img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid #ce4380;
+  margin-bottom: 10px;
+}
+
+.team-member p {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  text-align: center;
+}
+
+footer .contact-info {
+  flex: 0.5; 
+  text-align: center;
+}
+
+footer .social-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+}
+
+footer .social-links a {
+  color: #fff;
+  margin: 0 10px; 
+  font-size: 1.2rem;
+  
+}
+
+footer .social-links a:hover {
+  color: #ce4380;
+}
+
+footer .newsletter {
+  display: flex;
+  align-items: center;
+  justify-content: flex; 
+  
+}
+
+footer .newsletter input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #ce4380;
+  border-radius: 5px;
+  outline: none;
+  margin-right: 10px; 
+}
+
+footer .newsletter button {
+  background-color: #ce4380;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+footer .newsletter button:hover {
+  background-color: #a73369; 
+}

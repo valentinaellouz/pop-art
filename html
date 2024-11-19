@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pop&Art - L'Artisanat Pop Culture</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="photos/logo popart.jpg" alt="Logo Pop&Art" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#universe">L'univers Pop&Art</a></li>
+          <li><a href="#products">Nos produits</a></li>
+          <li><a href="#best-sellers">Best-sellers</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- PHOTO DE COUVERTURE -->
+    <section class="cover-photo">
+      <img src="photos/photo cuverturepop.jpg" alt="Photo Couverture" />
+      <img src="photos/photo murcianopop.jpg" alt="Photo Couverture2" />
+    </section>
+    <!-- UNIVERS POP&ART -->
+    <section id="universe">
+      <h2>L'univers Pop&Art</h2>
+      <p>
+        Pop&Art est une entreprise passionnée par la pop culture, l'artisanat,
+        et les objets uniques issus de licences exclusives. Nous proposons des
+        produits inspirés des mangas, comics, cinéma, et jeux vidéo.
+      </p>
+      <div class="themed-visuals">
+        <img src="photos/photo mangapop.jpg" alt="Mangas" />
+        <img src="photos/photo comicspop.png" alt="Comics" />
+        <img src="photos/photo cinemapop.jpg" alt="Cinéma" />
+        <img src="photos/photo gamingpop.jpg" alt="Jeux vidéo" />
+      </div>
+      <div class="licenses">
+        <h3>Nos Licences</h3>
+        <ul>
+          <li><img src="photos/totoro-icon.png" alt="Totoro" /></li>
+          <li><img src="photos/photo zeldaicon.jpg" alt="Zelda" /></li>
+          <li>
+            <img src="photos/photo assassins logo.png" alt="Assassin's Creed" />
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PRODUITS -->
+    <section id="products">
+      <h2>Nos Produits</h2>
+      <div class="product-grid">
+        <div class="product">
+          <img src="photos/produit1 zelda.jpg" alt="Produit 1" />
+          <h3>Produit Pop Art</h3>
+          <p>Licence: Zelda | Matériau: Résine | Taille: 20cm</p>
+          <button onclick="openProductDetails(1)">Voir plus</button>
+        </div>
+        <div class="product">
+          <img src="photos/photo produit2.jpg" alt="Produit 2" />
+          <h3>Produit Pop Art</h3>
+          <p>Licence: Totoro | Matériau: PVC | Taille: 15cm</p>
+          <button onclick="openProductDetails(2)">Voir plus</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- BEST SELLERS -->
+    <section id="best-sellers">
+      <h2>Best-sellers</h2>
+      <div class="carousel">
+        <!-- Carrousel best-sellers -->
+        <div class="carousel-item">
+          <img src="photos/bestseller1.jpg" alt="Best Seller 1" />
+          <p>Produit Édition Limitée - 5 restants</p>
+        </div>
+        <div class="carousel-item">
+          <img src="photos/bestseller2.png" alt="Best Seller 2" />
+          <p>Produit Édition Limitée - 3 restants</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact</h2>
+
+      <!-- Formulaire de contact -->
+      <form action="submit_form.php" method="POST" class="contact-form">
+        <label for="name">Nom</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Envoyer</button>
+      </form>
+
+      <h3>Rencontrez notre équipe</h3>
+      <div class="team">
+        <div class="team-member">
+          <img src="photos/ceo pop.jpg" alt="CEO" />
+          <p>Martin Blanc, CEO</p>
+        </div>
+        <div class="team-member">
+          <img src="photos/graphistepop.jpg" alt="Graphiste" />
+          <p>Yann Etienne, Graphiste</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="contact-info">
+        <p>Adresse : 123 Rue Pop Art, Lyon</p>
+        <p>Email : contact@popandart.com</p>
+        <p>Téléphone : 01 23 45 67 89</p>
+      </div>
+      <div class="social-links">
+        <a href="https://instagram.com/popandart"
+          ><img src="instagram-icon.png" alt="Instagram"
+        /></a>
+        <a href="https://facebook.com/popandart"
+          ><img src="facebook-icon.png" alt="Facebook"
+        /></a>
+        <a href="https://tiktok.com/popandart"
+          ><img src="tiktok-icon.png" alt="TikTok"
+        /></a>
+      </div>
+      <div class="newsletter">
+        <p>Inscrivez-vous à notre newsletter:</p>
+        <form action="subscribe_newsletter.php" method="POST">
+          <input type="email" name="email" placeholder="Votre email" required />
+          <button type="submit">S'inscrire</button>
+        </form>
+      </div>
+    </footer>
+
+    <script>
+      function openProductDetails(productId) {
+        alert("Détails du produit " + productId);
+      }
+    </script>
+  </body>
+</html>
